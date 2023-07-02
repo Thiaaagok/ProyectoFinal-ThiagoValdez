@@ -1,0 +1,41 @@
+.imgs-index{
+    background-color: #6AAFB2;
+    .img-header{
+        margin: 1.5rem 0 1.5rem 1rem;
+    }
+    .button-imgs{
+        margin-left: 5%;
+    }
+}
+
+.container-flex-index{
+    background-color: #1A2326;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+    padding-bottom: 25px;
+    .text-span-index{
+        color: white;
+        width: 30%;
+        margin-left: 25px;
+        font-size: 1.2rem;
+    }
+}
+
+.container-flex-index2{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #BF6396;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    .text-span-index2{
+        color: white;
+        width: 30%;
+        margin-left: 25px;
+        font-size: 1.2rem;
+    }
+}
