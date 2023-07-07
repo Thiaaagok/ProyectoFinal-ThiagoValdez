@@ -1,0 +1,41 @@
+.grid-container-hombres{
+    display: flex;
+    padding-top: 60px;
+    .acordion{
+        width: 100%;
+    }
+    .ul-marcas{
+        list-style: none;
+        padding-left: 0px;
+    }
+    .ul-marcas li{
+        padding-bottom: 10px;
+    }
+    .ul-marcas li a{
+        text-decoration: none;
+        color: black;
+    }
+    .info{
+        text-align: center;
+    }
+}
+
+.sub-navbar{
+    margin: 0px 150px 0px 50px;
+}
+.info p{
+    margin-bottom: 0px;
+}
+
+.grid-container-perfumes{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid-container-perfumes figure{
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px gray;
+    padding: 0px 10px 0px 10px;
+    margin: 30px 140px 0px 40px;
+}

@@ -14,12 +14,12 @@ nav{
     .grid-box{
         background-color: white;
         align-content: center;
-        height: 150px;
+        height: 100px;
         border: 1px solid black;
         .form-search{
             display: flex;
             align-items: center;
-            margin: 50px 0px 50px 130px;
+            margin: 30px 0px 10px 130px;
             .search-box{
                 max-width: 200px;
                 height: auto;
@@ -27,7 +27,7 @@ nav{
             }
         }
         .login-container{
-            margin: 50px 0px 50px 200px;
+            margin: 20px 0px 10px 200px;
         }
     }
 }
@@ -35,7 +35,7 @@ nav{
 .grid-box h1{
     font-family: 'Antic Didone', serif;
     text-align: center;
-    margin: 40px 0px 50px 0px;
+    margin: 15px 0px 10px 0px;
     font-size: 60px;
 }
 
@@ -44,7 +44,8 @@ nav{
 }
 
 .Nav-bar ul{
-    background-color: #D8E6F2;
+    background-color: #262626;
+    padding: 10px 0px 10px 0px;
     display: flex;
     list-style: none;
     justify-content: center;
@@ -52,8 +53,10 @@ nav{
 }
 
 .Nav-bar ul li a{
-    font-size: 1.2rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: Poppins,sans-serif;
     text-decoration: none;
     margin: 0 4rem 0 4rem;
-    color: black;
+    color: white;
 }
