@@ -4,52 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eternity</title>
+    <link rel="shortcut icon" href="../../img/nav/spray-bottle.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/main.css">
 </head>
 <body>
-    <nav>
-        <section>
-            <p class="subtext-nav">solo disponible en Argentina</p>
-        </section>
-        <section>
-            <div class="grid-container-nav">
-                <div class="grid-box">
-                    <form class="form-search">
-                        <label>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                            </svg>
-                        </label>
-                        <input class="form-control me-2 search-box" type="search" placeholder="Buscar" aria-label="Search">
-                    </form>
-                </div>
-                <div class="grid-box">
-                    <H1>ETERNITY</H1>
-                </div>
-                <div class="grid-box">
-                    <div class="login-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+    <header class="header">
+        <p class="subtext-nav">solo disponible en Argentina</p>
+        <div class="grid-container-nav">
+            <div class="grid-box">
+                <form class="form-search">
+                    <label>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                         </svg>
-                        <p>Login</p>
-                    </div>
+                    </label>
+                    <input class="form-control me-2 search-box" type="search" placeholder="Buscar" aria-label="Search">
+                </form>
+            </div>
+            <div class="grid-box">
+                <H1>ETERNITY</H1>
+            </div>
+            <div class="grid-box">
+                <div class="login-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                    <p>Login</p>
                 </div>
             </div>
-        </section>
-        <section class="Nav-bar">
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="../mujeres.html">Mujeres</a></li>
-                <li><a href="../hombres.html">Hombres</a></li>
-                <li><a href="../contacto.html">Contacto</a></li>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg Nav-bar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ul-nav">
+                <li class="nav-item inicio-nav">
+                    <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../hombres.html">Hombres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../mujeres.html">Mujeres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../historia.html">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contacto.html">Contacto</a>
+                </li>
             </ul>
-        </section>
+          </div>
+        </div>
     </nav>
     <main class="grid-container-hombres">
         <div class="sub-navbar">
-            <a href="../hombres.html">Mas Comprados</a>
+            <a class="mas-comprados" href="../hombres.html">Mas Comprados</a>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">

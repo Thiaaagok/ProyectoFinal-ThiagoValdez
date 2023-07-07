@@ -1,5 +1,5 @@
-nav {
-  background-color: #D8E6F2;
+.header {
+  background-color: #DDE6ED;
 }
 
 .subtext-nav {
@@ -44,13 +44,13 @@ nav {
   font-size: 20px;
 }
 
-.Nav-bar ul {
-  background-color: #262626;
-  padding: 10px 0px 10px 0px;
-  display: flex;
+.Nav-bar {
+  background-color: #DDE6ED;
   list-style: none;
-  justify-content: center;
   margin-bottom: 0;
+}
+.Nav-bar .inicio-nav {
+  margin-left: 27rem;
 }
 
 .Nav-bar ul li a {
@@ -58,8 +58,8 @@ nav {
   text-transform: uppercase;
   font-family: Poppins, sans-serif;
   text-decoration: none;
-  margin: 0 4rem 0 4rem;
-  color: white;
+  color: black;
+  margin-right: 5rem;
 }
 
 .imgs-index .img-header {
@@ -147,6 +147,10 @@ nav {
   text-align: center;
 }
 
+nav {
+  background-color: #7C96AB;
+}
+
 .grid-container-hombres {
   display: flex;
   padding-top: 60px;
@@ -172,6 +176,11 @@ nav {
 .sub-navbar {
   margin: 0px 150px 0px 50px;
 }
+.sub-navbar .mas-comprados {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
 
 .info p {
   margin-bottom: 0px;
@@ -183,11 +192,17 @@ nav {
 }
 
 .grid-container-perfumes figure {
+  transition: all 1s;
+  transition: transform 1s;
   border: 1px solid white;
   border-radius: 5px;
   box-shadow: 0 0 10px gray;
   padding: 0px 10px 0px 10px;
-  margin: 30px 140px 0px 40px;
+  margin: 50px 140px 0px 40px;
+}
+
+.grid-container-perfumes figure:hover {
+  box-shadow: 0 0 10px black;
 }
 
 /*# sourceMappingURL=main.css.map */
