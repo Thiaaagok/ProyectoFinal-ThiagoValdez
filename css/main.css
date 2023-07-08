@@ -209,6 +209,14 @@ nav {
     right: 0%;
   }
 }
+@keyframes slide-top {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0%;
+  }
+}
 .animation-img {
   position: relative;
   animation-fill-mode: forwards;
@@ -226,7 +234,7 @@ nav {
 .animation-img2 {
   position: relative;
   animation-fill-mode: forwards;
-  animation-name: slide-left;
+  animation-name: slide-right;
   animation-duration: 2s;
 }
 
@@ -234,6 +242,20 @@ nav {
   position: relative;
   animation-fill-mode: forwards;
   animation-name: slide-right;
+  animation-duration: 2s;
+}
+
+.animation-lanzamientos {
+  position: relative;
+  animation-fill-mode: forwards;
+  animation-name: slide-right;
+  animation-duration: 2s;
+}
+
+.animation-lanzamientos2 {
+  position: relative;
+  animation-fill-mode: forwards;
+  animation-name: slide-left;
   animation-duration: 2s;
 }
 
