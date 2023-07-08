@@ -24,12 +24,21 @@ nav{
 }
 
 .sub-navbar{
-    margin: 0px 150px 0px 50px;
+    margin: 0px 100px 0px 50px;
     .mas-comprados{
         text-decoration: none;
         font-size: 20px;
         color: black;
     }
+}
+
+.sub-navbar h2{
+    width: 200px;
+}
+
+.sub-navbar button{
+    font-size: 20px;
+    padding-left: 0px;
 }
 
 .info p{
@@ -39,16 +48,23 @@ nav{
 .grid-container-perfumes{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    .box-perfume{
+        margin: 40px 120px 0px 40px;
+    }
+}
+
+.grid-container-perfumes a{
+    text-decoration: none;
 }
 
 .grid-container-perfumes figure{
     transition: all 1s;
     transition: transform 1s;
     border: 1px solid white;
+    color: black;
     border-radius: 5px;
     box-shadow: 0 0 10px  gray;
     padding: 0px 10px 0px 10px;
-    margin: 50px 140px 0px 40px;
 }
 
 .grid-container-perfumes figure:hover{

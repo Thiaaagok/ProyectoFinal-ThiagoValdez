@@ -1,56 +1,26 @@
-.header {
-  background-color: #DDE6ED;
-}
-
 .subtext-nav {
   text-align: center;
   margin-bottom: 0px;
 }
 
-.grid-container-nav {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 0px 63px 0px 63px;
-  align-self: center;
-}
-.grid-container-nav .grid-box {
-  background-color: white;
-  align-content: center;
-  height: 100px;
-  border: 1px solid black;
-}
-.grid-container-nav .grid-box .form-search {
-  display: flex;
-  align-items: center;
-  margin: 30px 0px 10px 130px;
-}
-.grid-container-nav .grid-box .form-search .search-box {
-  max-width: 200px;
-  height: auto;
-  border-radius: 25px;
-}
-.grid-container-nav .grid-box .login-container {
-  margin: 20px 0px 10px 200px;
-}
-
-.grid-box h1 {
-  font-family: "Antic Didone", serif;
-  text-align: center;
-  margin: 15px 0px 10px 0px;
-  font-size: 60px;
-}
-
-.grid-box p {
-  font-size: 20px;
-}
-
 .Nav-bar {
-  background-color: #DDE6ED;
+  background-color: white;
   list-style: none;
   margin-bottom: 0;
+  padding: 4px 0 4px 0;
+  flex-direction: column;
 }
 .Nav-bar .inicio-nav {
   margin-left: 27rem;
+}
+.Nav-bar .box-shadow {
+  box-shadow: 0 9px 9px -9px #999999;
+}
+
+.Nav-bar h1 {
+  font-family: "Antic Didone", serif;
+  font-size: 55px;
+  margin: 0 0 0 0;
 }
 
 .Nav-bar ul li a {
@@ -70,17 +40,16 @@
 }
 
 .container-flex-index {
-  background-color: #DEDEDE;
+  padding-top: 25px;
+  padding-bottom: 25px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 3rem;
-  padding-bottom: 25px;
 }
 .container-flex-index .text-span-index {
   border-radius: 10px;
-  background-color: #FFF;
+  background-color: #FFD0D0;
   padding: 20px;
   color: black;
   width: 30%;
@@ -89,16 +58,17 @@
 }
 
 .container-flex-index2 {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  background-color: #DEDEDE;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  padding-top: 3rem;
+  padding-bottom: 25px;
 }
 .container-flex-index2 .text-span-index2 {
   border-radius: 10px;
-  background-color: #FFD0D0;
+  background-color: #FFF;
   padding: 20px;
   color: black;
   width: 30%;
@@ -129,7 +99,7 @@
 
 .grid-container-footer {
   background-color: #FFD0D0;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0px 0px 0px;
   padding-top: 20px;
   padding-bottom: 20px;
   display: grid;
@@ -174,12 +144,21 @@ nav {
 }
 
 .sub-navbar {
-  margin: 0px 150px 0px 50px;
+  margin: 0px 100px 0px 50px;
 }
 .sub-navbar .mas-comprados {
   text-decoration: none;
   font-size: 20px;
   color: black;
+}
+
+.sub-navbar h2 {
+  width: 200px;
+}
+
+.sub-navbar button {
+  font-size: 20px;
+  padding-left: 0px;
 }
 
 .info p {
@@ -190,19 +169,155 @@ nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+.grid-container-perfumes .box-perfume {
+  margin: 40px 120px 0px 40px;
+}
+
+.grid-container-perfumes a {
+  text-decoration: none;
+}
 
 .grid-container-perfumes figure {
   transition: all 1s;
   transition: transform 1s;
   border: 1px solid white;
+  color: black;
   border-radius: 5px;
   box-shadow: 0 0 10px gray;
   padding: 0px 10px 0px 10px;
-  margin: 50px 140px 0px 40px;
 }
 
 .grid-container-perfumes figure:hover {
   box-shadow: 0 0 10px black;
+}
+
+@keyframes slide-right {
+  /* 0%{transform:translateX(0)}100%{transform:translateX(100px)} */
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes slide-left {
+  /* 0%{transform:translateX(0)}100%{transform:translateX(-100px)} */
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+.animation-img {
+  position: relative;
+  animation-fill-mode: forwards;
+  animation-name: slide-right;
+  animation-duration: 2s;
+}
+
+.text-span-index {
+  position: relative;
+  animation-fill-mode: forwards;
+  animation-name: slide-left;
+  animation-duration: 2s;
+}
+
+.animation-img2 {
+  position: relative;
+  animation-fill-mode: forwards;
+  animation-name: slide-left;
+  animation-duration: 2s;
+}
+
+.text-span-index2 {
+  position: relative;
+  animation-fill-mode: forwards;
+  animation-name: slide-right;
+  animation-duration: 2s;
+}
+
+.header-info {
+  margin: 0px 109px 0px 109px;
+}
+.header-info .box-logo {
+  padding: 5px 0px 5px 0px;
+  background-color: black;
+  text-align: center;
+}
+.header-info .flex-box-unique {
+  margin-top: 40px;
+  display: flex;
+}
+.header-info .carousel-producto {
+  margin-left: 150px;
+}
+.header-info .info-producto {
+  border-radius: 25px;
+  margin: 0px 0px 0px 0px;
+  padding: 40px 40px 40px 40px;
+}
+.header-info .info-producto .name-producto {
+  margin-bottom: 50px;
+  font-size: 25px;
+  margin-right: 30px;
+}
+.header-info .info-producto .precio-producto {
+  font-size: 35px;
+}
+.header-info .info-producto .cuotas-producto {
+  margin-bottom: 50px;
+}
+.header-info .info-producto .boton-comprar {
+  margin-left: 80px;
+  margin-bottom: 80px;
+}
+.header-info .info-producto .boton-comprar .comprar {
+  background-color: black;
+  border-radius: 25px;
+  padding: 15px 60px 15px 60px;
+  font-size: 20px;
+}
+.header-info .info-producto .extra {
+  display: flex;
+}
+.header-info .info-producto .extra .box-extra {
+  padding: 20px 20px 20px 20px;
+  color: black;
+  border: 1px solid;
+  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 13px;
+}
+.header-info .info-producto .extra a {
+  text-decoration: none;
+}
+
+.main-margin {
+  margin: 100px 109px 0px 109px;
+}
+.main-margin .flex-container-extra {
+  display: flex;
+}
+.main-margin .flex-container-extra .descripcion {
+  max-width: 700px;
+  margin-right: 200px;
+}
+.main-margin .flex-container-extra .box-caracteristicas {
+  border: 1px solid;
+}
+.main-margin .flex-container-extra .caracteristicas p {
+  margin-bottom: 12px;
+  width: 350px;
+}
+.main-margin .flex-container-extra .caracteristicas div {
+  display: flex;
+}
+.main-margin .flex-container-extra .space {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,6 @@
+@mixin animation ($position,$fillmode,$name,$duration){
+    position: $position;
+    animation-fill-mode: $fillmode;
+    animation-name: $name;
+    animation-duration: $duration;
+}

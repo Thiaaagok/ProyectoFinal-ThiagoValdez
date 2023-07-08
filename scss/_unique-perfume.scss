@@ -1,0 +1,82 @@
+.header-info{
+    margin: 0px 109px 0px 109px;
+    .box-logo{
+        padding: 5px 0px 5px 0px;
+        background-color: black;
+        text-align: center;
+    }
+    .flex-box-unique{
+        margin-top: 40px;
+        display: flex;
+    }
+    .carousel-producto{
+        margin-left: 150px;
+    }
+    .info-producto{
+        border-radius: 25px;
+        margin: 0px 0px 0px 0px;
+        padding: 40px 40px 40px 40px;
+        .name-producto{
+            margin-bottom: 50px;
+            font-size: 25px;
+            margin-right: 30px;
+        }
+        .precio-producto{
+            font-size: 35px;
+        }
+        .cuotas-producto{
+            margin-bottom: 50px;
+        }
+        .boton-comprar{
+            margin-left: 80px;
+            margin-bottom: 80px;
+            .comprar{
+                background-color: black;
+                border-radius: 25px;
+                padding: 15px 60px 15px 60px;
+                font-size: 20px;
+            }
+        }
+        .extra{
+            display: flex;
+            .box-extra{
+                padding: 20px 20px 20px 20px;
+                color: black;
+                border: 1px solid;
+                margin-right: 70px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                font-size: 13px;
+            }
+        }
+        .extra a{
+            text-decoration: none;
+        }
+    }
+}
+
+.main-margin{
+    margin: 100px 109px 0px 109px;
+    .flex-container-extra{
+        display: flex;
+        .descripcion{
+            max-width: 700px;
+            margin-right: 200px;
+        }
+        .box-caracteristicas{
+            border: 1px solid;
+        }
+        .caracteristicas p{
+            margin-bottom: 12px;
+            width: 350px;
+        }
+        .caracteristicas div{
+            display: flex;
+        }
+        .space{
+            width: 100%;
+        }
+    }
+}
