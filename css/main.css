@@ -342,4 +342,25 @@ nav {
   width: 100%;
 }
 
+.container-historia {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.container-historia .img-box {
+  padding: 25px 25px 25px 25px;
+  border-radius: 15px;
+  background-color: coral;
+}
+.container-historia .text-box {
+  text-align: center;
+  margin-top: 150px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+.container-historia .text-box p {
+  background-color: darksalmon;
+  border-radius: 15px;
+}
+
 /*# sourceMappingURL=main.css.map */
