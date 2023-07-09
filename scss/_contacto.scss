@@ -1,0 +1,71 @@
+.container-contacto{
+    margin: 80px 150px 80px 150px;
+    display: flex;
+    align-items: center;
+    .info-text-contacto{
+        margin-left: 120px;
+        .extra-info-contacto{
+            display: flex;
+            .horarios{
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+            }
+            .direccion{
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+            }
+        }
+        .extra-info-contacto div{
+            margin-right: 70px;
+        }
+        .extra-info-contacto div p{
+            margin: 0 0 0 0;
+        }
+    }
+    .info-text-contacto h4{
+        font-size: 4rem;
+    }
+}
+
+.Container-contacto-2{
+    display: flex;
+    background-color: #d7d7cb;
+    text-align: center;
+    .contactanos{
+        margin-top: 100px;
+        font-size: 3rem;
+    }
+    .text-contactanos{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .form-contacto{
+        text-align: center;
+        .box-contacto{
+            margin-left: 200px;
+            display: flex;
+            .box-label{
+                display: flex;
+                flex-direction: column;
+            }
+            .box-label input{
+                background-color: #d7d7cb;
+                padding: 5px 0px 5px 10px;
+            }
+        }
+        .text-area{
+            margin-left: 200px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 200px;
+        }
+        .text-area textarea{
+            background-color: #d7d7cb;
+        }
+        .button-contacto{
+            margin-top: 10px;
+            background-color: #d7d7cb;
+            padding: 8px 8px 8px 8px;
+        }
+    }
+}

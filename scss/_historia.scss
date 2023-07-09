@@ -1,20 +1,11 @@
 .container-historia{
+    background-color: #d7d7cb;
     display: flex;
     margin-top: 40px;
-    margin-left: 40px;
-    .img-box{
-        padding: 25px 25px 25px 25px;
-        border-radius: 15px;
-        background-color: coral;
-    }
+    align-items: center;
     .text-box{
         text-align: center;
-        margin-top: 150px;
         margin-right: 150px;
         margin-left: 80px;
-    }
-    .text-box p{
-        background-color: darksalmon;
-        border-radius: 15px;
     }
 }
