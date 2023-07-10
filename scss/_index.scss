@@ -10,6 +10,7 @@
 .container-flex-index{
     padding-top: 25px;
     padding-bottom: 25px;
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -29,6 +30,7 @@
     background-color: #DEDEDE;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     padding-top: 3rem;
@@ -41,6 +43,9 @@
         width: 30%;
         margin-left: 28px;
         font-size: 18px;
+    }
+    .img-index{
+        width: 100%;
     }
 }
 

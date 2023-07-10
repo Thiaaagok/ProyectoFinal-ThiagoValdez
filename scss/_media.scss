@@ -1,0 +1,11 @@
+@media screen and (max-width:800px){
+    .text-span-index{
+        width: 100%;
+    }
+    .grid-container-index{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .text-span-index2{
+        width: 100%;
+    }
+}
