@@ -93,6 +93,7 @@
 .lanzamientos .grid-container-index {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "producto1 producto2 producto3 producto4 producto5";
 }
 .lanzamientos .grid-container-index .grid-box-index {
   background-color: #fff;
@@ -100,6 +101,26 @@
   border: 1px solid white;
   box-shadow: 0 0 10px rgba(6, 6, 6, 0.1);
   margin: 0px 10px 0px 10px;
+}
+
+.producto1 {
+  grid-area: producto1;
+}
+
+.producto2 {
+  grid-area: producto2;
+}
+
+.producto3 {
+  grid-area: producto3;
+}
+
+.producto4 {
+  grid-area: producto4;
+}
+
+.producto5 {
+  grid-area: producto5;
 }
 
 .grid-container-footer {
@@ -239,7 +260,7 @@ nav {
 .animation-img2 {
   position: relative;
   animation-fill-mode: forwards;
-  animation-name: slide-right;
+  animation-name: slide-left;
   animation-duration: 2s;
 }
 
@@ -431,12 +452,14 @@ nav {
   padding: 8px 8px 8px 8px;
 }
 
-@media screen and (max-width: 800px) {
+@media (width < 768px) {
   .text-span-index {
     width: 100%;
   }
   .grid-container-index {
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "producto1" "producto2" "producto3" "producto4" "producto5";
   }
   .text-span-index2 {
     width: 100%;

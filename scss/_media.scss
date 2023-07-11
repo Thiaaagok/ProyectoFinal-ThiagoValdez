@@ -1,9 +1,16 @@
-@media screen and (max-width:800px){
+@media (width < 768px){
     .text-span-index{
         width: 100%;
     }
     .grid-container-index{
         grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: 
+        "producto1"
+        "producto2"
+        "producto3"
+        "producto4"
+        "producto5";
     }
     .text-span-index2{
         width: 100%;

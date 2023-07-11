@@ -60,6 +60,8 @@
     .grid-container-index{
         display: grid;
         grid-template-columns: repeat(5,1fr);
+        grid-template-areas: 
+        "producto1 producto2 producto3 producto4 producto5";
         .grid-box-index{
             background-color: #fff;
             text-align: center;
@@ -69,3 +71,24 @@
         }
     }
 }
+
+.producto1{
+    grid-area: producto1;
+}
+
+.producto2{
+    grid-area: producto2;
+}
+
+.producto3{
+    grid-area: producto3;
+}
+
+.producto4{
+    grid-area: producto4;
+}
+
+.producto5{
+    grid-area: producto5;
+}
+

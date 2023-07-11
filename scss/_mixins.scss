@@ -4,3 +4,27 @@
     animation-name: $name;
     animation-duration: $duration;
 }
+
+.animation-img{
+    @include animation (relative,forwards,slide-right,2s);
+}
+
+.text-span-index{
+    @include animation(relative,forwards,slide-left,2s);
+}
+
+.animation-img2{
+    @include animation(relative,forwards,slide-left,2s);
+}
+
+.text-span-index2{
+    @include animation (relative,forwards,slide-right,2s);
+}
+
+.animation-lanzamientos{
+    @include animation (relative,forwards,slide-right,2s);
+}
+
+.animation-lanzamientos2{
+    @include animation(relative,forwards,slide-left,2s);
+}
