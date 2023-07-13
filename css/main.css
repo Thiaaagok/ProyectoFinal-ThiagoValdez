@@ -123,6 +123,24 @@
   grid-area: producto5;
 }
 
+@media (max-width: 768px) {
+  .lanzamientos .grid-container-index {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "producto1" "producto2" "producto3" "producto4" "producto5";
+  }
+  .lanzamientos .grid-container-index .grid-box-index {
+    margin-top: 30px;
+  }
+  .container-flex-index .text-span-index {
+    margin: 0 0 0 0;
+    width: 100%;
+  }
+  .container-flex-index2 .text-span-index2 {
+    margin: 0 0 0 0;
+    width: 100%;
+  }
+}
 .grid-container-footer {
   background-color: #FFD0D0;
   margin: 20px 0px 0px 0px;
@@ -130,6 +148,7 @@
   padding-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "info1 info2 info3";
 }
 .grid-container-footer .grid-box-footer h4 {
   text-align: center;
@@ -143,12 +162,36 @@
   text-align: center;
 }
 
+.info1 {
+  grid-area: info1;
+}
+
+.info2 {
+  grid-area: info2;
+}
+
+.info3 {
+  grid-area: info3;
+}
+
+@media (max-width: 768px) {
+  .grid-container-footer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "info1" "info2" "info3";
+  }
+  .grid-container-footer .info-2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 nav {
   background-color: #7C96AB;
 }
 
 .grid-container-hombres {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 60px;
 }
 .grid-container-hombres .acordion {
@@ -194,9 +237,47 @@ nav {
 .grid-container-perfumes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "perfume1 perfume2 perfume3" "perfume4 perfume5 perfume6" "perfume7 perfume8 perfume9";
 }
 .grid-container-perfumes .box-perfume {
   margin: 40px 120px 0px 40px;
+}
+
+.perfume1 {
+  grid-area: perfume1;
+}
+
+.perfume2 {
+  grid-area: perfume2;
+}
+
+.perfume3 {
+  grid-area: perfume3;
+}
+
+.perfume4 {
+  grid-area: perfume4;
+}
+
+.perfume5 {
+  grid-area: perfume5;
+}
+
+.perfume6 {
+  grid-area: perfume6;
+}
+
+.perfume7 {
+  grid-area: perfume7;
+}
+
+.perfume8 {
+  grid-area: perfume8;
+}
+
+.perfume9 {
+  grid-area: perfume9;
 }
 
 .grid-container-perfumes a {
@@ -217,6 +298,13 @@ nav {
   box-shadow: 0 0 10px black;
 }
 
+@media (max-width: 768px) {
+  .grid-container-perfumes {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "perfume1" "perfume2" "perfume3" "perfume4" "perfume5" "perfume6" "perfume7" "perfume8" "perfume9";
+  }
+}
 @keyframes slide-right {
   /* 0%{transform:translateX(0)}100%{transform:translateX(100px)} */
   0% {
@@ -450,20 +538,6 @@ nav {
   margin-top: 10px;
   background-color: #d7d7cb;
   padding: 8px 8px 8px 8px;
-}
-
-@media (width < 768px) {
-  .text-span-index {
-    width: 100%;
-  }
-  .grid-container-index {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "producto1" "producto2" "producto3" "producto4" "producto5";
-  }
-  .text-span-index2 {
-    width: 100%;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

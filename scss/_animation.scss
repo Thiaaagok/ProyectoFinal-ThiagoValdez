@@ -1,3 +1,5 @@
+@import "_mixins";
+
 @keyframes slide-right {
     /* 0%{transform:translateX(0)}100%{transform:translateX(100px)} */
     0%{
@@ -24,4 +26,28 @@
     100%{
         top: 0%;
     }
+}
+
+.animation-img{
+    @include animation (relative,forwards,slide-right,2s);
+}
+
+.text-span-index{
+    @include animation(relative,forwards,slide-left,2s);
+}
+
+.animation-img2{
+    @include animation(relative,forwards,slide-left,2s);
+}
+
+.text-span-index2{
+    @include animation (relative,forwards,slide-right,2s);
+}
+
+.animation-lanzamientos{
+    @include animation (relative,forwards,slide-right,2s);
+}
+
+.animation-lanzamientos2{
+    @include animation(relative,forwards,slide-left,2s);
 }

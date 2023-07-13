@@ -3,6 +3,7 @@ nav{
 }
 .grid-container-hombres{
     display: flex;
+    flex-wrap: wrap;
     padding-top: 60px;
     .acordion{
         width: 100%;
@@ -48,9 +49,42 @@ nav{
 .grid-container-perfumes{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "perfume1 perfume2 perfume3"
+    "perfume4 perfume5 perfume6"
+    "perfume7 perfume8 perfume9";
     .box-perfume{
         margin: 40px 120px 0px 40px;
     }
+}
+
+.perfume1{
+    grid-area: perfume1;
+}
+.perfume2{
+    grid-area: perfume2;
+}
+.perfume3{
+    grid-area: perfume3; 
+}
+.perfume4{
+    grid-area: perfume4; 
+}
+.perfume5{
+    grid-area: perfume5; 
+}
+.perfume6{
+    grid-area: perfume6;
+}
+.perfume7{
+    grid-area: perfume7;
+}
+.perfume8{
+    grid-area: perfume8;
+}
+.perfume9{
+    grid-area: perfume9;
 }
 
 .grid-container-perfumes a{
@@ -69,4 +103,21 @@ nav{
 
 .grid-container-perfumes figure:hover{
     box-shadow:0 0 10px black;
+}
+
+@media (max-width: 768px){
+    .grid-container-perfumes{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(9,1fr);
+        grid-template-areas: 
+        "perfume1"
+        "perfume2"
+        "perfume3"
+        "perfume4"
+        "perfume5"
+        "perfume6"
+        "perfume7"
+        "perfume8"
+        "perfume9";
+    }
 }

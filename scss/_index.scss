@@ -92,3 +92,32 @@
     grid-area: producto5;
 }
 
+@media (max-width: 768px){
+    .lanzamientos{
+        .grid-container-index{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-areas: 
+            "producto1"
+            "producto2"
+            "producto3"
+            "producto4"
+            "producto5";
+            .grid-box-index{
+                margin-top: 30px;
+            }
+        }
+    }
+    .container-flex-index{
+        .text-span-index{
+            margin: 0 0 0 0;
+            width: 100%;
+        }
+    }
+    .container-flex-index2{
+        .text-span-index2{
+            margin: 0 0 0 0;
+            width: 100%;
+        }
+    }
+}
