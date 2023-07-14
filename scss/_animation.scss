@@ -1,5 +1,9 @@
 @import "_mixins";
 
+@keyframes scale-center{
+    0%{transform:scale(.5)} 100%{transform:scale(1)}
+}
+
 @keyframes slide-right {
     /* 0%{transform:translateX(0)}100%{transform:translateX(100px)} */
     0%{
@@ -9,6 +13,7 @@
         left: 0%
     }
 }
+
 @keyframes slide-left {
     /* 0%{transform:translateX(0)}100%{transform:translateX(-100px)} */
     0%{
@@ -50,4 +55,11 @@
 
 .animation-lanzamientos2{
     @include animation(relative,forwards,slide-left,2s);
+}
+
+.box-perfume{
+    position: relative;
+    animation-fill-mode: forwards;
+    animation-name: scale-center;
+    animation-duration: 1s;
 }

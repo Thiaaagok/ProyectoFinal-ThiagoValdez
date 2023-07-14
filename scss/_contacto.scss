@@ -27,7 +27,7 @@
     }
 }
 
-.Container-contacto-2{
+.container-contacto-2{
     display: flex;
     background-color: #d7d7cb;
     text-align: center;
@@ -67,5 +67,42 @@
             background-color: #d7d7cb;
             padding: 8px 8px 8px 8px;
         }
+    }
+}
+
+@media (max-width: 768px){
+    .container-contacto{
+        flex-wrap: wrap;
+        margin: 0 0 0 0;
+        .info-text-contacto{
+            margin: 0 0 0 0;
+        }
+        .info-text-contacto h4{
+            font-size: 3.5rem;
+            .extra-info-contacto{
+                justify-content: center;
+                .container-text{
+                    margin: 0 0 0 0;
+                }
+            }
+        }
+    }
+    .container-contacto-2{
+        flex-wrap: wrap;
+        .form-contacto{
+            width: 100%;
+            .box-contacto{
+                margin: 0 0 0 0;
+            }
+            .text-area{
+                margin: 0 0 0 0;
+            }
+        }
+    }
+    .img-contacto{
+        width: 100%;
+    }
+    .img-contacto-2{
+        width: 100%;
     }
 }
