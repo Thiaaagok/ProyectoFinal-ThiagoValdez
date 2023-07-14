@@ -23,15 +23,23 @@
 }
 
 .Nav-bar ul li a{
-    font-size: 14px;
+    transition: all 3s;
+    transition: transform 3s;
+    font-size: $texto-small;
     text-transform: uppercase;
     font-family: 'Teko', sans-serif;
     text-decoration: none;
     color: black;
     margin-right: 5rem;
-    
+}
+.Nav-bar ul li a:hover{
+    color: black;
+    transform: scale(1.1);
 }
 
+.navbar-icon{
+    fill: black;
+}
 @media (max-width: 768px){
     .Nav-bar{
     .inicio-nav{

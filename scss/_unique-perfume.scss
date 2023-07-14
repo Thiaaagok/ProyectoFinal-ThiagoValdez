@@ -80,3 +80,38 @@
         }
     }
 }
+
+@media (max-width: 768px){
+    .header-info{
+        margin: 0 0 0 0;
+        .carousel-producto{
+            width: 100%;
+            margin: 0 0 0 0;
+            .img-perfume{
+                width: 100%;
+            }
+        }
+        .info-producto{
+            .boton-comprar{
+                margin-left: 0px;
+            }
+            .extra{
+                .box-extra{
+                    margin: 0 0 0 8px;
+                }
+            }
+        }
+    }
+    .flex-box-unique{
+        flex-wrap: wrap;
+    }
+    .main-margin{
+        margin: 0 0 0 0;
+        .flex-container-extra{
+            flex-wrap: wrap;
+            .descripcion{
+                margin: 0 0 20px 0;
+            } 
+        }
+    }
+}

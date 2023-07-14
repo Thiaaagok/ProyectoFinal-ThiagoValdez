@@ -107,6 +107,7 @@ nav{
 
 @media (max-width: 768px){
     .grid-container-perfumes{
+        margin-left: 27px;
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(9,1fr);
         grid-template-areas: 

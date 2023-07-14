@@ -24,12 +24,23 @@
 }
 
 .Nav-bar ul li a {
+  transition: all 3s;
+  transition: transform 3s;
   font-size: 14px;
   text-transform: uppercase;
   font-family: "Teko", sans-serif;
   text-decoration: none;
   color: black;
   margin-right: 5rem;
+}
+
+.Nav-bar ul li a:hover {
+  color: black;
+  transform: scale(1.1);
+}
+
+.navbar-icon {
+  fill: black;
 }
 
 @media (max-width: 768px) {
@@ -45,13 +56,13 @@
 }
 
 .container-flex-index {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  flex-wrap: wrap;
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .container-flex-index .text-span-index {
   border-radius: 10px;
@@ -64,12 +75,12 @@
 }
 
 .container-flex-index2 {
-  background-color: #DEDEDE;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #DEDEDE;
   padding-top: 3rem;
   padding-bottom: 25px;
 }
@@ -305,6 +316,7 @@ nav {
 
 @media (max-width: 768px) {
   .grid-container-perfumes {
+    margin-left: 27px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(9, 1fr);
     grid-template-areas: "perfume1" "perfume2" "perfume3" "perfume4" "perfume5" "perfume6" "perfume7" "perfume8" "perfume9";
@@ -476,6 +488,36 @@ nav {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .header-info {
+    margin: 0 0 0 0;
+  }
+  .header-info .carousel-producto {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+  .header-info .carousel-producto .img-perfume {
+    width: 100%;
+  }
+  .header-info .info-producto .boton-comprar {
+    margin-left: 0px;
+  }
+  .header-info .info-producto .extra .box-extra {
+    margin: 0 0 0 8px;
+  }
+  .flex-box-unique {
+    flex-wrap: wrap;
+  }
+  .main-margin {
+    margin: 0 0 0 0;
+  }
+  .main-margin .flex-container-extra {
+    flex-wrap: wrap;
+  }
+  .main-margin .flex-container-extra .descripcion {
+    margin: 0 0 20px 0;
+  }
+}
 .container-historia {
   background-color: #d7d7cb;
   display: flex;

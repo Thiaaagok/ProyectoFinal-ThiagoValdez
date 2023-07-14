@@ -8,13 +8,9 @@
 }
 
 .container-flex-index{
+    @include flex (row-reverse,space-evenly,center,wrap);
     padding-top: 25px;
     padding-bottom: 25px;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-evenly;
     .text-span-index{
         border-radius: 10px;
         background-color: #FFD0D0;
@@ -27,12 +23,8 @@
 }
 
 .container-flex-index2{
+    @include flex (row,space-evenly,center,wrap);
     background-color: #DEDEDE;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
     padding-top: 3rem;
     padding-bottom: 25px;
     .text-span-index2{
