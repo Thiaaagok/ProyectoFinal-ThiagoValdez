@@ -1,3 +1,6 @@
+.carrousel-box{
+    margin-top: 6px;
+}
 .imgs-index{
     .img-header{
         width: 100%;
@@ -24,14 +27,13 @@
 
 .container-flex-index2{
     @include flex (row,space-evenly,center,wrap);
-    background-color: #DEDEDE;
     padding-top: 3rem;
     padding-bottom: 25px;
     .text-span-index2{
         border-radius: 10px;
-        background-color: #FFF;
+        background-color: #999999;
         padding: 20px;
-        color: black;
+        color: white;
         width: 30%;
         margin-left: 28px;
         font-size: 18px;
@@ -43,10 +45,10 @@
 
 .lanzamientos{
     padding-top: 30px;
-    background-color: #B8DBD3;
     padding-bottom: 30px;
     .text-nuevos{
         text-align: center;
+        font-family: 'Didact Gothic', sans-serif;
         padding-bottom: 25px;
     }
     .grid-container-index{
@@ -55,11 +57,30 @@
         grid-template-areas: 
         "producto1 producto2 producto3 producto4 producto5";
         .grid-box-index{
+            box-shadow: 0 0 10px  gray;
             background-color: #fff;
             text-align: center;
             border: 1px solid white;
-            box-shadow: 0 0 10px rgba(6,6,6,.1);
             margin: 0px 10px 0px 10px;
+            .nombre figcaption{
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .nombre p{
+                text-transform: uppercase;
+                font-size: 15px;
+            }
+            .precio{
+                margin-top: 10px;
+                .pesos{
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+        }
+        .grid-box-index p{
+            margin: 0 0 0 0;
         }
     }
 }

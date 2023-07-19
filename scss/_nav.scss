@@ -1,49 +1,39 @@
-.subtext-nav{
-    text-align: center;
-    margin-bottom: 0px;
-}
-.Nav-bar{
+.nav-box{
     background-color: white;
-    list-style: none;
     margin-bottom: 0;
     padding: 4px 0 4px 0;
-    flex-direction: column;
-    .inicio-nav{
-        margin-left: 27rem;
+    box-shadow: 0 9px 9px -9px #999999;
+    .nav-bar{
+        flex-direction: row-reverse;
+        .nav-link{
+            color: #373737;
+            border: 2px solid transparent;
+        }
     }
-    .box-shadow{
-        box-shadow: 0 9px 9px -9px #999999;
+    .nav-bar ul li{
+        padding: 0px 10px;
+    }
+    .nav-bar ul li a{
+        transition: 1s;
+        padding: 5px 15px;
+        border: 2px solid transparent;
+        border-radius: 15px;
+        font-size: 1.08rem;
+        font-family: "DM Sans",sans-serif;
+        text-decoration: none;
+        color: #373737;
+    }
+    .nav-bar ul li a:hover{
+        border-color: #46474A;
     }
 }
 
-.Nav-bar h1{
+.nav-box h1{
     font-family: 'Antic Didone', serif;
-    font-size: 55px;
+    font-size: 45px;
     margin: 0 0 0 0;
-}
-
-.Nav-bar ul li a{
-    transition: all 3s;
-    transition: transform 3s;
-    font-size: $texto-small;
-    text-transform: uppercase;
-    font-family: 'Teko', sans-serif;
-    text-decoration: none;
-    color: black;
-    margin-right: 5rem;
-}
-.Nav-bar ul li a:hover{
-    color: black;
-    transform: scale(1.1);
 }
 
 .navbar-icon{
     fill: black;
-}
-@media (max-width: 768px){
-    .Nav-bar{
-    .inicio-nav{
-        margin: 0 0 0 0;
-    } 
-    }
 }
