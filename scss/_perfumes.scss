@@ -1,7 +1,12 @@
+.box-img-men{
+    margin: 0 550px 0 600px;
+}
+.box-img-women{
+    margin: 0 400px 0 450px;
+}
 .grid-container-hombres{
     display: flex;
     flex-wrap: wrap;
-    padding-top: 60px;
     .acordion{
         width: 100%;
     }
