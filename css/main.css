@@ -1,4 +1,8 @@
+@charset "UTF-8";
 .nav-box {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
   background-color: white;
   margin-bottom: 0;
   padding: 4px 0 4px 0;
@@ -164,6 +168,9 @@
     margin: 0 0 0 0;
     width: 100%;
   }
+  .container-flex-index .img-index {
+    width: 100%;
+  }
   .container-flex-index2 .text-span-index2 {
     margin: 0 0 0 0;
     width: 100%;
@@ -171,17 +178,18 @@
 }
 .grid-container-footer {
   border-top: 1px solid black;
-  margin: 20px 50px 0px 52px;
+  margin: 20px 50px 0px 50px;
   text-align: start;
   justify-items: center;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 0.4fr);
   grid-template-areas: "info1 info2 info3";
 }
 .grid-container-footer .grid-box-footer {
   margin-top: 20px;
 }
 .grid-container-footer .ul-container {
+  gap: 10px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -196,11 +204,11 @@
 .grid-container-footer .ul-container ul li a {
   text-decoration: none;
   color: black;
-  transition: 1s;
+  transition: transform 0.3s ease;
+  transform: scale(1);
 }
 .grid-container-footer .ul-container ul li a:hover {
-  font-weight: 500;
-  padding: 0 0 0 5px;
+  transform: scale(1.2);
 }
 .grid-container-footer .grid-box-footer p {
   text-align: center;
@@ -225,8 +233,10 @@
 
 .container-redes {
   border-top: 1px solid black;
+  border-bottom: 1px solid black;
   padding-top: 10px;
-  margin: 0px 50px 0px 52px;
+  padding-bottom: 10px;
+  margin: 0px 50px 0px 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -241,8 +251,8 @@
 }
 
 .container-paises {
-  margin: 10px 50px 30px 52px;
-  border-top: 1px solid black;
+  margin-left: 100px;
+  margin-top: 20px;
 }
 .container-paises .container-flags {
   display: flex;
@@ -261,23 +271,33 @@
   font-weight: 600;
   transition: 1s;
 }
-.container-paises .container-flags .box-flags a:hover {
-  padding: 0 0 0 5px;
-}
 
 .container-paises h4 {
   margin-top: 10px;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
   .grid-container-footer {
+    justify-content: center;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    margin-right: 0px;
     grid-template-areas: "info1" "info2" "info3";
   }
   .grid-container-footer .info-2 {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  .container-redes {
+    margin: 0;
+  }
+  .container-flags {
+    width: 100%;
+  }
+  .container-paises {
+    margin-left: 30px;
+    margin-right: 0px;
   }
 }
 .box-img-men {
@@ -421,11 +441,31 @@
 }
 
 @media (max-width: 768px) {
+  .grid-container-hombres {
+    justify-content: center;
+  }
+  .sub-navbar {
+    margin: 0;
+  }
   .grid-container-perfumes {
-    margin-left: 27px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(9, 1fr);
     grid-template-areas: "perfume1" "perfume2" "perfume3" "perfume4" "perfume5" "perfume6" "perfume7" "perfume8" "perfume9";
+  }
+  .grid-container-perfumes .box-perfume {
+    margin: 0;
+  }
+  .box-img-men {
+    margin: 0;
+  }
+  .box-img-men img {
+    width: 100%;
+  }
+  .box-img-women {
+    margin: 0;
+  }
+  .box-img-women img {
+    width: 100%;
   }
 }
 @keyframes scale-center {
@@ -509,6 +549,33 @@
   animation-fill-mode: forwards;
   animation-name: scale-center;
   animation-duration: 1s;
+}
+
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: right;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.rating label:before {
+  content: "★";
+  font-size: 30px;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: black;
+  transition: color 0.3s;
 }
 
 .header-info {
@@ -704,7 +771,7 @@
 .container-contacto-2 .form-contacto .box-contacto .box-label input {
   background-color: #d7d7cb;
   padding: 5px 0px 5px 10px;
-  border: 1px solid;
+  border: 0.1px solid;
 }
 .container-contacto-2 .form-contacto .text-area {
   margin-left: 200px;
@@ -757,6 +824,15 @@
   .img-contacto-2 {
     width: 100%;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */

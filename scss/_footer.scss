@@ -1,17 +1,18 @@
 
 .grid-container-footer{
     border-top: 1px solid black;
-    margin: 20px 50px 0px 52px;
+    margin: 20px 50px 0px 50px;
     text-align: start;
     justify-items: center;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,0.4fr);
     grid-template-areas:
     "info1 info2 info3";
     .grid-box-footer{
         margin-top: 20px;
     }
     .ul-container{
+        gap: 10px;
         display: flex;
         flex-wrap: wrap;
     }
@@ -26,11 +27,11 @@
     .ul-container ul li a{
         text-decoration: none;
         color: black;
-        transition: 1s;
+        transition: transform 0.3s ease;
+        transform: scale(1.0);
     }
     .ul-container ul li a:hover{
-        font-weight: 500;
-        padding: 0 0 0 5px;
+        transform: scale(1.2);
     }
     .grid-box-footer p{
         text-align: center;
@@ -52,8 +53,10 @@
 
 .container-redes{
     border-top: 1px solid black;
+    border-bottom: 1px solid black;
     padding-top: 10px;
-    margin: 0px 50px 0px 52px;
+    padding-bottom: 10px;
+    margin: 0px 50px 0px 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -66,9 +69,10 @@
         margin-right: 10px;
     }
 }
+
 .container-paises{
-    margin: 10px 50px 30px 52px;
-    border-top: 1px solid black;
+    margin-left: 100px;
+    margin-top: 20px;
     .container-flags{
         display: flex;
         flex-wrap: wrap;
@@ -85,19 +89,20 @@
             font-weight: 600;
             transition: 1s;
         }
-        .box-flags a:hover{
-            padding: 0 0 0 5px;
-        }
+        
     }
 }
 .container-paises h4{
     margin-top: 10px;
+    width: 100%;
 }
 
 @media (max-width: 768px){
     .grid-container-footer{
+        justify-content: center;
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(3,1fr);
+        margin-right: 0px;
         grid-template-areas: 
         "info1"
         "info2"
@@ -106,6 +111,16 @@
             margin-top: 20px;
             margin-bottom: 20px;
         }
+    }
+    .container-redes{
+        margin: 0;
+    }
+    .container-flags{
+        width: 100%;
+    }
+    .container-paises{
+        margin-left: 30px;
+        margin-right: 0px
     }
 }
 

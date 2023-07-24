@@ -131,8 +131,13 @@
 }
 
 @media (max-width: 768px){
+    .grid-container-hombres{
+        justify-content: center;
+    }
+    .sub-navbar{
+        margin: 0;
+    }
     .grid-container-perfumes{
-        margin-left: 27px;
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(9,1fr);
         grid-template-areas: 
@@ -145,5 +150,20 @@
         "perfume7"
         "perfume8"
         "perfume9";
+        .box-perfume{
+            margin: 0;
+        }
+    }
+    .box-img-men{
+        margin: 0;
+    }
+    .box-img-men img{
+        width: 100%;
+    }
+    .box-img-women{
+        margin: 0;
+    }
+    .box-img-women img{
+        width: 100%;
     }
 }
