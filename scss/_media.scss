@@ -35,12 +35,16 @@
 
 /* MEDIA FOOTER */
 @media (max-width: 768px){
+    footer{
+        margin: 0 0 0 0;
+    }
     .grid-container-footer{
         display: block;
         justify-content: center;
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(3,1fr);
         margin-right: 0px;
+        margin-left: 30px;
         grid-template-areas: 
         "info1"
         "info2"
@@ -53,12 +57,17 @@
     .container-redes{
         margin: 0;
     }
-    .container-flags{
-        width: 100%;
-    }
-    .container-paises{
-        margin-left: 30px;
-        margin-right: 0px
+}
+.container-paises{
+    margin-left: 30px;
+    margin-right: 0px
+}
+
+.container-flags{
+    justify-content: unset;
+    width: 100%;
+    .box-flags{
+        margin: 0 0 0 0;
     }
 }
 /* /MEDIA FOOTER */
@@ -162,15 +171,19 @@
         margin: 0 0 0 0;
         .info-text-contacto{
             margin: 0 0 0 0;
-        }
-        .info-text-contacto h4{
-            font-size: 3.5rem;
             .extra-info-contacto{
-                justify-content: center;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: space-around;
                 .container-text{
-                    margin: 0 0 0 0;
+                    text-align: center;
+                    margin-right: 0px;
                 }
             }
+        }
+        .info-text-contacto h4{
+            text-align: center;
+            font-size: 2rem;
         }
     }
     .container-contacto-2{
@@ -179,10 +192,21 @@
             width: 100%;
             .box-contacto{
                 margin: 0 0 0 0;
+                .box-label input{
+                    margin-left: 20px;
+                    width: 90%;
+                }
+            }
+            .text-area textarea{
+                margin-left: 20px;
+                width: 90%;
             }
             .text-area{
                 margin: 0 0 0 0;
             }
+        }
+        .contactanos{
+            font-size: 2.5rem;
         }
     }
     .img-contacto{
@@ -190,6 +214,13 @@
     }
     .img-contacto-2{
         width: 100%;
+    }
+}
+
+.container-form-contacto{
+    width: 100%;
+    .box-contacto{
+        flex-direction: column;
     }
 }
 /* /MEDIA CONTACTO */

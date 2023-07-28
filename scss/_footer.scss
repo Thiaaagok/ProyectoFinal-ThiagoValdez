@@ -83,10 +83,10 @@ footer{
         display: flex;
         flex-wrap: wrap;
         .box-flags{
-            margin-right: 150px;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
+            margin-right: 30px;
         }
         .box-flags a{
             text-decoration: none;
