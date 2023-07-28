@@ -293,7 +293,6 @@ footer {
 /* START NAVBAR-IZQUIERDA */
 .grid-container-hombres {
   display: flex;
-  flex-wrap: wrap;
 }
 .grid-container-hombres .acordion {
   width: 100%;
@@ -881,6 +880,7 @@ body {
 /* MEDIA PERFUMES */
 @media (max-width: 768px) {
   .grid-container-hombres {
+    flex-wrap: wrap;
     justify-content: center;
   }
   .sub-navbar {

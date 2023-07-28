@@ -75,6 +75,7 @@
 /* MEDIA PERFUMES */
 @media (max-width: 768px){
     .grid-container-hombres{
+        flex-wrap: wrap;
         justify-content: center;
     }
     .sub-navbar{
