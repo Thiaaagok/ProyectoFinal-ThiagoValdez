@@ -1,4 +1,18 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p {
+  margin: 0 0 0 0;
+}
+
 .nav-box {
   position: sticky;
   top: 0;
@@ -276,7 +290,6 @@ footer {
 
 .container-paises h4 {
   margin-top: 10px;
-  width: 100%;
 }
 
 /* END PAISES */
@@ -408,7 +421,7 @@ footer {
   transition: transform 1s;
   border: 1px solid white;
   color: black;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 0 0 10px gray;
   padding: 0px 10px 0px 10px;
 }
@@ -808,14 +821,21 @@ footer {
 }
 
 /* END FORM CONTACTANOS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.main-error404 {
+  margin: 50px 0px 0px 0px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-body {
-  overflow-x: hidden;
+.text-error404 a {
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: black;
 }
 
 /* MEDIA INDEX */
@@ -851,7 +871,7 @@ body {
     justify-content: center;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    margin-right: 0px;
+    margin-right: 30px;
     margin-left: 30px;
     grid-template-areas: "info1" "info2" "info3";
   }
@@ -985,6 +1005,9 @@ body {
   .container-contacto-2 .form-contacto .box-contacto {
     margin: 0 0 0 0;
   }
+  .container-contacto-2 .form-contacto .box-contacto .box-label {
+    width: 100%;
+  }
   .container-contacto-2 .form-contacto .box-contacto .box-label input {
     margin-left: 20px;
     width: 90%;
@@ -998,6 +1021,9 @@ body {
   }
   .container-contacto-2 .contactanos {
     font-size: 2.5rem;
+  }
+  .container-contacto-2 .contactanos .text-contactanos {
+    width: 100%;
   }
   .img-contacto {
     width: 100%;

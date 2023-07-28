@@ -43,7 +43,7 @@
         justify-content: center;
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(3,1fr);
-        margin-right: 0px;
+        margin-right: 30px;
         margin-left: 30px;
         grid-template-areas: 
         "info1"
@@ -193,6 +193,9 @@
             width: 100%;
             .box-contacto{
                 margin: 0 0 0 0;
+                .box-label{
+                    width: 100%;
+                }
                 .box-label input{
                     margin-left: 20px;
                     width: 90%;
@@ -208,6 +211,9 @@
         }
         .contactanos{
             font-size: 2.5rem;
+            .text-contactanos{
+                width: 100%;
+            }
         }
     }
     .img-contacto{
