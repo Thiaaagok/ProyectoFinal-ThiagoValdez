@@ -42,6 +42,7 @@
   fill: black;
 }
 
+/* START CARROUSEL */
 .carrousel-box {
   margin-top: 6px;
 }
@@ -53,6 +54,8 @@
   margin-left: 5%;
 }
 
+/* END CARROUSEL */
+/* START PERFUME Y TEXTO MUJER */
 .container-flex-index {
   display: flex;
   flex-direction: row-reverse;
@@ -72,6 +75,8 @@
   font-size: 18px;
 }
 
+/* END PERFUME Y TEXTO MUJER */
+/* START PERFUME Y TEXTO HOMBRE */
 .container-flex-index2 {
   display: flex;
   flex-direction: row;
@@ -94,9 +99,10 @@
   width: 100%;
 }
 
+/* END PERFUME Y TEXTO HOMBRE */
+/* START LANZAMIENTOS */
 .lanzamientos {
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 .lanzamientos .text-nuevos {
   text-align: center;
@@ -104,35 +110,22 @@
   padding-bottom: 25px;
 }
 .lanzamientos .grid-container-index {
+  text-align: center;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 2fr);
   grid-template-areas: "producto1 producto2 producto3 producto4 producto5";
 }
-.lanzamientos .grid-container-index .grid-box-index {
-  box-shadow: 0 0 10px gray;
-  background-color: #fff;
-  text-align: center;
-  border: 1px solid white;
-  margin: 0px 10px 0px 10px;
+.lanzamientos .grid-container-index .box-perfume-index {
+  margin: 0px 0px 0px 0px;
 }
-.lanzamientos .grid-container-index .grid-box-index .nombre figcaption {
+.lanzamientos .grid-container-index .info-index figcaption {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 500;
 }
-.lanzamientos .grid-container-index .grid-box-index .nombre p {
+.lanzamientos .grid-container-index .info-index p {
   text-transform: uppercase;
   font-size: 15px;
-}
-.lanzamientos .grid-container-index .grid-box-index .precio {
-  margin-top: 10px;
-}
-.lanzamientos .grid-container-index .grid-box-index .precio .pesos {
-  font-size: 20px;
-  font-weight: 700;
-}
-.lanzamientos .grid-container-index .grid-box-index p {
-  margin: 0 0 0 0;
 }
 
 .producto1 {
@@ -155,30 +148,36 @@
   grid-area: producto5;
 }
 
-@media (max-width: 768px) {
-  .lanzamientos .grid-container-index {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "producto1" "producto2" "producto3" "producto4" "producto5";
-  }
-  .lanzamientos .grid-container-index .grid-box-index {
-    margin-top: 30px;
-  }
-  .container-flex-index .text-span-index {
-    margin: 0 0 0 0;
-    width: 100%;
-  }
-  .container-flex-index .img-index {
-    width: 100%;
-  }
-  .container-flex-index2 .text-span-index2 {
-    margin: 0 0 0 0;
-    width: 100%;
-  }
+.grid-container-index a {
+  text-decoration: none;
 }
+
+.grid-container-index figure {
+  transition: all 1s;
+  transition: transform 1s;
+  border: 1px solid white;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px gray;
+  padding: 0px 10px 0px 10px;
+}
+
+.grid-container-index figure:hover {
+  box-shadow: 0 0 10px black;
+}
+.grid-container-index figure:hover .button-comprar-2 {
+  opacity: 1;
+}
+
+/* END LANZAMIENTOS */
+footer {
+  margin: 0 50px 0 50px;
+}
+
+/* START LINKS EXTRAS */
 .grid-container-footer {
   border-top: 1px solid black;
-  margin: 20px 50px 0px 50px;
+  margin-top: 20px;
   text-align: start;
   justify-items: center;
   display: grid;
@@ -231,12 +230,13 @@
   grid-area: info4;
 }
 
+/* END LINKS EXTRAS */
+/* START REDES */
 .container-redes {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 0px 50px 0px 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -250,8 +250,10 @@
   margin-right: 10px;
 }
 
+/* END REDES */
+/* START PAISES */
 .container-paises {
-  margin-left: 100px;
+  margin-left: 50px;
   margin-top: 20px;
 }
 .container-paises .container-flags {
@@ -277,29 +279,8 @@
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  .grid-container-footer {
-    justify-content: center;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    margin-right: 0px;
-    grid-template-areas: "info1" "info2" "info3";
-  }
-  .grid-container-footer .info-2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .container-redes {
-    margin: 0;
-  }
-  .container-flags {
-    width: 100%;
-  }
-  .container-paises {
-    margin-left: 30px;
-    margin-right: 0px;
-  }
-}
+/* END PAISES */
+/* START IMAGENES PRINCIPALES */
 .box-img-men {
   margin: 0 550px 0 600px;
 }
@@ -308,6 +289,8 @@
   margin: 0 400px 0 450px;
 }
 
+/* END IMAGENES PRINCIAPLES */
+/* START NAVBAR-IZQUIERDA */
 .grid-container-hombres {
   display: flex;
   flex-wrap: wrap;
@@ -351,41 +334,8 @@
   padding-left: 0px;
 }
 
-.info p {
-  margin-bottom: 0px;
-}
-
-.grid-container-perfumes {
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "perfume1 perfume2 perfume3" "perfume4 perfume5 perfume6" "perfume7 perfume8 perfume9";
-}
-.grid-container-perfumes .box-perfume {
-  margin: 40px 120px 0px 40px;
-}
-.grid-container-perfumes .info figcaption {
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 500;
-}
-.grid-container-perfumes .info p {
-  text-transform: uppercase;
-  font-size: 15px;
-}
-.grid-container-perfumes .precio-producto {
-  margin-top: 10px;
-}
-.grid-container-perfumes .precio-producto .signo-pesos {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.grid-container-perfumes p {
-  margin: 0 0 0 0;
-}
-
+/* END NAVBAR-IZQUIERDA */
+/* START PERFUMES */
 .perfume1 {
   grid-area: perfume1;
 }
@@ -422,6 +372,34 @@
   grid-area: perfume9;
 }
 
+.grid-container-perfumes {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "perfume1 perfume2 perfume3" "perfume4 perfume5 perfume6" "perfume7 perfume8 perfume9";
+}
+.grid-container-perfumes .box-perfume {
+  margin: 40px 120px 0px 40px;
+}
+.grid-container-perfumes .info figcaption {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+}
+.grid-container-perfumes .info p {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.grid-container-perfumes .precio-producto .signo-pesos {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.grid-container-perfumes p {
+  margin: 0 0 0 0;
+}
+
 .grid-container-perfumes a {
   text-decoration: none;
 }
@@ -439,35 +417,11 @@
 .grid-container-perfumes figure:hover {
   box-shadow: 0 0 10px black;
 }
-
-@media (max-width: 768px) {
-  .grid-container-hombres {
-    justify-content: center;
-  }
-  .sub-navbar {
-    margin: 0;
-  }
-  .grid-container-perfumes {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-    grid-template-areas: "perfume1" "perfume2" "perfume3" "perfume4" "perfume5" "perfume6" "perfume7" "perfume8" "perfume9";
-  }
-  .grid-container-perfumes .box-perfume {
-    margin: 0;
-  }
-  .box-img-men {
-    margin: 0;
-  }
-  .box-img-men img {
-    width: 100%;
-  }
-  .box-img-women {
-    margin: 0;
-  }
-  .box-img-women img {
-    width: 100%;
-  }
+.grid-container-perfumes figure:hover .button-comprar-2 {
+  opacity: 1;
 }
+
+/* END PERFUMES */
 @keyframes scale-center {
   0% {
     transform: scale(0.5);
@@ -544,6 +498,7 @@
   animation-duration: 2s;
 }
 
+/* START ANIMATION PERFUMES */
 .box-perfume {
   position: relative;
   animation-fill-mode: forwards;
@@ -551,6 +506,8 @@
   animation-duration: 1s;
 }
 
+/* END ANIMATION PERFUMES */
+/* START ANIMATION ESTRELLAS */
 .rating {
   display: inline-block;
 }
@@ -578,8 +535,111 @@
   transition: color 0.3s;
 }
 
+/* END ANIMATION ESTRELLAS */
+/* START BUTTON COMPRAR 2 */
+.button-comprar-2 {
+  align-items: center;
+  opacity: 0;
+  width: 80%;
+  border-radius: 10px;
+  transition: 0.25s;
+}
+
+.button-2 {
+  padding: 8px 8px;
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: black;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 1px solid black;
+}
+
+.button-2:hover {
+  color: white;
+  transform: scale(1.1);
+  outline: 2px solid black;
+  box-shadow: 4px 5px 17px -4px black;
+}
+
+.button-2::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: black;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.button-2:hover::before {
+  width: 250%;
+}
+
+/* END BUTTON COMPRAR 2 */
+/* START BUTTON COMPRAR 3 */
+.button-comprar-3 {
+  align-items: center;
+  border-radius: 10px;
+}
+
+.button-3 {
+  padding: 8px 8px;
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: black;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 1px solid black;
+}
+
+.button-3:hover {
+  color: white;
+  transform: scale(1.1);
+  outline: 2px solid black;
+  box-shadow: 4px 5px 17px -4px black;
+}
+
+.button-3::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: black;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.button-3:hover::before {
+  width: 250%;
+}
+
+/* END BUTTON COMPRAR 3 */
+/* START HEADER */
 .header-info {
   margin: 0px 109px 0px 109px;
+  /* START CARROUSEL */
+  /* END CARROUSEL */
+  /* START INFO DERECHA */
+  /* END INFO DERECHA */
 }
 .header-info .box-logo {
   padding: 5px 0px 5px 0px;
@@ -610,14 +670,8 @@
   margin-bottom: 50px;
 }
 .header-info .info-producto .boton-comprar {
-  margin-left: 80px;
-  margin-bottom: 80px;
-}
-.header-info .info-producto .boton-comprar .comprar {
-  background-color: black;
-  border-radius: 25px;
-  padding: 15px 60px 15px 60px;
-  font-size: 20px;
+  margin-left: 160px;
+  margin-bottom: 40px;
 }
 .header-info .info-producto .extra {
   display: flex;
@@ -637,6 +691,8 @@
   text-decoration: none;
 }
 
+/* END HEADER */
+/* START MAIN */
 .main-margin {
   margin: 100px 109px 0px 109px;
 }
@@ -661,36 +717,7 @@
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  .header-info {
-    margin: 0 0 0 0;
-  }
-  .header-info .carousel-producto {
-    width: 100%;
-    margin: 0 0 0 0;
-  }
-  .header-info .carousel-producto .img-perfume {
-    width: 100%;
-  }
-  .header-info .info-producto .boton-comprar {
-    margin-left: 0px;
-  }
-  .header-info .info-producto .extra .box-extra {
-    margin: 0 0 0 8px;
-  }
-  .flex-box-unique {
-    flex-wrap: wrap;
-  }
-  .main-margin {
-    margin: 0 0 0 0;
-  }
-  .main-margin .flex-container-extra {
-    flex-wrap: wrap;
-  }
-  .main-margin .flex-container-extra .descripcion {
-    margin: 0 0 20px 0;
-  }
-}
+/* END MAIN */
 .container-historia {
   background-color: #d7d7cb;
   display: flex;
@@ -703,18 +730,7 @@
   margin-left: 80px;
 }
 
-@media (max-width: 768px) {
-  .container-historia {
-    flex-wrap: wrap;
-  }
-  .container-historia .text-box {
-    width: 100%;
-    margin: 0 0 0 0;
-  }
-  .container-historia .img-historia {
-    width: 100%;
-  }
-}
+/* START CONTACTANOS */
 .container-contacto {
   margin: 80px 150px 80px 150px;
   display: flex;
@@ -744,6 +760,8 @@
   font-size: 4rem;
 }
 
+/* END CONTACTANOS */
+/* START FORM CONTACTANOS */
 .container-contacto-2 {
   display: flex;
   background-color: #d7d7cb;
@@ -789,6 +807,143 @@
   padding: 8px 8px 8px 8px;
 }
 
+/* END FORM CONTACTANOS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* MEDIA INDEX */
+@media (max-width: 768px) {
+  .lanzamientos .grid-container-index {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "producto1" "producto2" "producto3" "producto4" "producto5";
+  }
+  .lanzamientos .grid-container-index .grid-box-index {
+    margin-top: 30px;
+  }
+  .container-flex-index .text-span-index {
+    margin: 0 0 0 0;
+    width: 100%;
+  }
+  .container-flex-index .img-index {
+    width: 100%;
+  }
+  .container-flex-index2 .text-span-index2 {
+    margin: 0 0 0 0;
+    width: 100%;
+  }
+}
+/* /MEDIA INDEX */
+/* MEDIA FOOTER */
+@media (max-width: 768px) {
+  .grid-container-footer {
+    display: block;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-right: 0px;
+    grid-template-areas: "info1" "info2" "info3";
+  }
+  .grid-container-footer .info-2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .container-redes {
+    margin: 0;
+  }
+  .container-flags {
+    width: 100%;
+  }
+  .container-paises {
+    margin-left: 30px;
+    margin-right: 0px;
+  }
+}
+/* /MEDIA FOOTER */
+/* MEDIA PERFUMES */
+@media (max-width: 768px) {
+  .grid-container-hombres {
+    justify-content: center;
+  }
+  .sub-navbar {
+    margin: 0;
+  }
+  .grid-container-perfumes {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "perfume1" "perfume2" "perfume3" "perfume4" "perfume5" "perfume6" "perfume7" "perfume8" "perfume9";
+  }
+  .grid-container-perfumes .box-perfume {
+    margin: 0;
+  }
+  .box-img-men {
+    margin: 0;
+  }
+  .box-img-men img {
+    width: 100%;
+  }
+  .box-img-women {
+    margin: 0;
+  }
+  .box-img-women img {
+    width: 100%;
+  }
+}
+/* /MEDIA PERFUMES */
+/* MEDIA UNIQUE PERFUME */
+@media (max-width: 768px) {
+  .header-info {
+    margin: 0 0 0 0;
+  }
+  .header-info .carousel-producto {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+  .header-info .carousel-producto .img-perfume {
+    width: 100%;
+  }
+  .header-info .info-producto .boton-comprar {
+    margin-left: 0px;
+  }
+  .header-info .info-producto .extra .box-extra {
+    margin: 0 0 0 8px;
+  }
+  .flex-box-unique {
+    flex-wrap: wrap;
+  }
+  .main-margin {
+    margin: 0 0 0 0;
+  }
+  .main-margin .flex-container-extra {
+    flex-wrap: wrap;
+  }
+  .main-margin .flex-container-extra .descripcion {
+    margin: 0 0 20px 0;
+  }
+}
+/* /MEDIA UNIQUE PERFUME */
+/* MEDIA HISTORIA */
+@media (max-width: 768px) {
+  .container-historia {
+    flex-wrap: wrap;
+  }
+  .container-historia .text-box {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+  .container-historia .img-historia {
+    width: 100%;
+  }
+}
+/* /MEDIA HISTORIA */
+/* MEDIA CONTACTO */
 @media (max-width: 768px) {
   .container-contacto {
     flex-wrap: wrap;
@@ -825,14 +980,6 @@
     width: 100%;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  overflow-x: hidden;
-}
+/* /MEDIA CONTACTO */
 
 /*# sourceMappingURL=main.css.map */

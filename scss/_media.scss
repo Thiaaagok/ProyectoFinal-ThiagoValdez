@@ -1,0 +1,195 @@
+/* MEDIA INDEX */
+@media (max-width: 768px){
+    .lanzamientos{
+        .grid-container-index{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-areas: 
+            "producto1"
+            "producto2"
+            "producto3"
+            "producto4"
+            "producto5";
+            .grid-box-index{
+                margin-top: 30px;
+            }
+        }
+    }
+    .container-flex-index{
+        .text-span-index{
+            margin: 0 0 0 0;
+            width: 100%;
+        }
+        .img-index{
+            width: 100%;
+        }
+    }
+    .container-flex-index2{
+        .text-span-index2{
+            margin: 0 0 0 0;
+            width: 100%;
+        }
+    }
+}
+/* /MEDIA INDEX */
+
+/* MEDIA FOOTER */
+@media (max-width: 768px){
+    .grid-container-footer{
+        display: block;
+        justify-content: center;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        margin-right: 0px;
+        grid-template-areas: 
+        "info1"
+        "info2"
+        "info3";
+        .info-2{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .container-redes{
+        margin: 0;
+    }
+    .container-flags{
+        width: 100%;
+    }
+    .container-paises{
+        margin-left: 30px;
+        margin-right: 0px
+    }
+}
+/* /MEDIA FOOTER */
+
+/* MEDIA PERFUMES */
+@media (max-width: 768px){
+    .grid-container-hombres{
+        justify-content: center;
+    }
+    .sub-navbar{
+        margin: 0;
+    }
+    .grid-container-perfumes{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(9,1fr);
+        grid-template-areas: 
+        "perfume1"
+        "perfume2"
+        "perfume3"
+        "perfume4"
+        "perfume5"
+        "perfume6"
+        "perfume7"
+        "perfume8"
+        "perfume9";
+        .box-perfume{
+            margin: 0;
+        }
+    }
+    .box-img-men{
+        margin: 0;
+    }
+    .box-img-men img{
+        width: 100%;
+    }
+    .box-img-women{
+        margin: 0;
+    }
+    .box-img-women img{
+        width: 100%;
+    }
+}
+/* /MEDIA PERFUMES */
+
+/* MEDIA UNIQUE PERFUME */
+@media (max-width: 768px){
+    .header-info{
+        margin: 0 0 0 0;
+        .carousel-producto{
+            width: 100%;
+            margin: 0 0 0 0;
+            .img-perfume{
+                width: 100%;
+            }
+        }
+        .info-producto{
+            .boton-comprar{
+                margin-left: 0px;
+            }
+            .extra{
+                .box-extra{
+                    margin: 0 0 0 8px;
+                }
+            }
+        }
+    }
+    .flex-box-unique{
+        flex-wrap: wrap;
+    }
+    .main-margin{
+        margin: 0 0 0 0;
+        .flex-container-extra{
+            flex-wrap: wrap;
+            .descripcion{
+                margin: 0 0 20px 0;
+            } 
+        }
+    }
+}
+/* /MEDIA UNIQUE PERFUME */
+
+/* MEDIA HISTORIA */
+@media (max-width: 768px){
+    .container-historia{
+        flex-wrap: wrap;
+        .text-box{
+            width: 100%;
+            margin: 0 0 0 0;
+        }
+        .img-historia{
+            width: 100%;
+        }
+    }
+}
+/* /MEDIA HISTORIA */
+
+/* MEDIA CONTACTO */
+@media (max-width: 768px){
+    .container-contacto{
+        flex-wrap: wrap;
+        margin: 0 0 0 0;
+        .info-text-contacto{
+            margin: 0 0 0 0;
+        }
+        .info-text-contacto h4{
+            font-size: 3.5rem;
+            .extra-info-contacto{
+                justify-content: center;
+                .container-text{
+                    margin: 0 0 0 0;
+                }
+            }
+        }
+    }
+    .container-contacto-2{
+        flex-wrap: wrap;
+        .form-contacto{
+            width: 100%;
+            .box-contacto{
+                margin: 0 0 0 0;
+            }
+            .text-area{
+                margin: 0 0 0 0;
+            }
+        }
+    }
+    .img-contacto{
+        width: 100%;
+    }
+    .img-contacto-2{
+        width: 100%;
+    }
+}
+/* /MEDIA CONTACTO */

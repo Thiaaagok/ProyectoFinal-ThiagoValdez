@@ -9,16 +9,3 @@
         margin-left: 80px;
     }
 }
-
-@media (max-width: 768px){
-    .container-historia{
-        flex-wrap: wrap;
-        .text-box{
-            width: 100%;
-            margin: 0 0 0 0;
-        }
-        .img-historia{
-            width: 100%;
-        }
-    }
-}

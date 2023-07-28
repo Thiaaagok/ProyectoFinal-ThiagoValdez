@@ -1,3 +1,4 @@
+/* START CARROUSEL */
 .carrousel-box{
     margin-top: 6px;
 }
@@ -9,7 +10,8 @@
         margin-left: 5%;
     }
 }
-
+/* END CARROUSEL */
+/* START PERFUME Y TEXTO MUJER */
 .container-flex-index{
     @include flex (row-reverse,space-evenly,center,wrap);
     padding-top: 25px;
@@ -24,7 +26,9 @@
         font-size: 18px;
     }
 }
+/* END PERFUME Y TEXTO MUJER */
 
+/* START PERFUME Y TEXTO HOMBRE */
 .container-flex-index2{
     @include flex (row,space-evenly,center,wrap);
     padding-top: 3rem;
@@ -42,45 +46,33 @@
         width: 100%;
     }
 }
+/* END PERFUME Y TEXTO HOMBRE */
 
+/* START LANZAMIENTOS */
 .lanzamientos{
     padding-top: 30px;
-    padding-bottom: 30px;
     .text-nuevos{
         text-align: center;
         font-family: 'Didact Gothic', sans-serif;
         padding-bottom: 25px;
     }
     .grid-container-index{
+        text-align: center;
         display: grid;
-        grid-template-columns: repeat(5,1fr);
+        grid-template-columns: repeat(5,2fr);
         grid-template-areas: 
         "producto1 producto2 producto3 producto4 producto5";
-        .grid-box-index{
-            box-shadow: 0 0 10px  gray;
-            background-color: #fff;
-            text-align: center;
-            border: 1px solid white;
-            margin: 0px 10px 0px 10px;
-            .nombre figcaption{
-                text-transform: uppercase;
-                font-size: 12px;
-                font-weight: 500;
-            }
-            .nombre p{
-                text-transform: uppercase;
-                font-size: 15px;
-            }
-            .precio{
-                margin-top: 10px;
-                .pesos{
-                    font-size: 20px;
-                    font-weight: 700;
-                }
-            }
+        .box-perfume-index{
+            margin: 0px 0px 0px 0px;
         }
-        .grid-box-index p{
-            margin: 0 0 0 0;
+        .info-index figcaption{
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .info-index p{
+            text-transform: uppercase;
+            font-size: 15px;
         }
     }
 }
@@ -105,35 +97,24 @@
     grid-area: producto5;
 }
 
-@media (max-width: 768px){
-    .lanzamientos{
-        .grid-container-index{
-            grid-template-columns: repeat(1,1fr);
-            grid-template-rows: repeat(5, 1fr);
-            grid-template-areas: 
-            "producto1"
-            "producto2"
-            "producto3"
-            "producto4"
-            "producto5";
-            .grid-box-index{
-                margin-top: 30px;
-            }
-        }
-    }
-    .container-flex-index{
-        .text-span-index{
-            margin: 0 0 0 0;
-            width: 100%;
-        }
-        .img-index{
-            width: 100%;
-        }
-    }
-    .container-flex-index2{
-        .text-span-index2{
-            margin: 0 0 0 0;
-            width: 100%;
-        }
+.grid-container-index a{
+    text-decoration: none;
+}
+
+.grid-container-index figure{
+    transition: all 1s;
+    transition: transform 1s;
+    border: 1px solid white;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px  gray;
+    padding: 0px 10px 0px 10px;
+}
+
+.grid-container-index figure:hover{
+    box-shadow:0 0 10px black;
+    .button-comprar-2{
+        opacity: 1;
     }
 }
+/* END LANZAMIENTOS */

@@ -1,7 +1,10 @@
-
+footer{
+    margin: 0 50px 0 50px;
+}
+/* START LINKS EXTRAS */
 .grid-container-footer{
     border-top: 1px solid black;
-    margin: 20px 50px 0px 50px;
+    margin-top: 20px;
     text-align: start;
     justify-items: center;
     display: grid;
@@ -50,13 +53,14 @@
 .info4{
     grid-area: info4;
 }
+/* END LINKS EXTRAS */
 
+/* START REDES */
 .container-redes{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 0px 50px 0px 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -69,9 +73,11 @@
         margin-right: 10px;
     }
 }
+/* END REDES */
 
+/* START PAISES */
 .container-paises{
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: 20px;
     .container-flags{
         display: flex;
@@ -96,31 +102,4 @@
     margin-top: 10px;
     width: 100%;
 }
-
-@media (max-width: 768px){
-    .grid-container-footer{
-        justify-content: center;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(3,1fr);
-        margin-right: 0px;
-        grid-template-areas: 
-        "info1"
-        "info2"
-        "info3";
-        .info-2{
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-    }
-    .container-redes{
-        margin: 0;
-    }
-    .container-flags{
-        width: 100%;
-    }
-    .container-paises{
-        margin-left: 30px;
-        margin-right: 0px
-    }
-}
-
+/* END PAISES */

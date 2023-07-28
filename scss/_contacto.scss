@@ -1,3 +1,4 @@
+/* START CONTACTANOS */
 .container-contacto{
     margin: 80px 150px 80px 150px;
     display: flex;
@@ -26,7 +27,9 @@
         font-size: 4rem;
     }
 }
+/* END CONTACTANOS */
 
+/* START FORM CONTACTANOS */
 .container-contacto-2{
     display: flex;
     background-color: #d7d7cb;
@@ -71,40 +74,4 @@
         }
     }
 }
-
-@media (max-width: 768px){
-    .container-contacto{
-        flex-wrap: wrap;
-        margin: 0 0 0 0;
-        .info-text-contacto{
-            margin: 0 0 0 0;
-        }
-        .info-text-contacto h4{
-            font-size: 3.5rem;
-            .extra-info-contacto{
-                justify-content: center;
-                .container-text{
-                    margin: 0 0 0 0;
-                }
-            }
-        }
-    }
-    .container-contacto-2{
-        flex-wrap: wrap;
-        .form-contacto{
-            width: 100%;
-            .box-contacto{
-                margin: 0 0 0 0;
-            }
-            .text-area{
-                margin: 0 0 0 0;
-            }
-        }
-    }
-    .img-contacto{
-        width: 100%;
-    }
-    .img-contacto-2{
-        width: 100%;
-    }
-}
+/* END FORM CONTACTANOS */

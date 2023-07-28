@@ -1,9 +1,13 @@
+/* START IMAGENES PRINCIPALES */
 .box-img-men{
     margin: 0 550px 0 600px;
 }
 .box-img-women{
     margin: 0 400px 0 450px;
 }
+/* END IMAGENES PRINCIAPLES */
+
+/* START NAVBAR-IZQUIERDA */
 .grid-container-hombres{
     display: flex;
     flex-wrap: wrap;
@@ -46,44 +50,9 @@
     font-size: 20px;
     padding-left: 0px;
 }
+/* END NAVBAR-IZQUIERDA */
 
-.info p{
-    margin-bottom: 0px;
-}
-
-.grid-container-perfumes{
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-template-areas: 
-    "perfume1 perfume2 perfume3"
-    "perfume4 perfume5 perfume6"
-    "perfume7 perfume8 perfume9";
-    .box-perfume{
-        margin: 40px 120px 0px 40px;
-    }
-    .info figcaption{
-        text-transform: uppercase;
-        font-size: 12px;
-        font-weight: 500;
-    }
-    .info p{
-        text-transform: uppercase;
-        font-size: 15px;
-    }
-    .precio-producto{
-        margin-top: 10px;
-        .signo-pesos{
-            font-size: 20px;
-            font-weight: 700;
-        }
-    }
-}
-.grid-container-perfumes p{
-    margin: 0 0 0 0;
-}
-
+/* START PERFUMES */
 .perfume1{
     grid-area: perfume1;
 }
@@ -112,6 +81,39 @@
     grid-area: perfume9;
 }
 
+.grid-container-perfumes{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "perfume1 perfume2 perfume3"
+    "perfume4 perfume5 perfume6"
+    "perfume7 perfume8 perfume9";
+    .box-perfume{
+        margin: 40px 120px 0px 40px;
+    }
+    .info figcaption{
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .info p{
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+    .precio-producto{
+        .signo-pesos{
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }     
+}
+
+.grid-container-perfumes p{
+    margin: 0 0 0 0;
+}
+
 .grid-container-perfumes a{
     text-decoration: none;
 }
@@ -128,42 +130,8 @@
 
 .grid-container-perfumes figure:hover{
     box-shadow:0 0 10px black;
-}
-
-@media (max-width: 768px){
-    .grid-container-hombres{
-        justify-content: center;
-    }
-    .sub-navbar{
-        margin: 0;
-    }
-    .grid-container-perfumes{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(9,1fr);
-        grid-template-areas: 
-        "perfume1"
-        "perfume2"
-        "perfume3"
-        "perfume4"
-        "perfume5"
-        "perfume6"
-        "perfume7"
-        "perfume8"
-        "perfume9";
-        .box-perfume{
-            margin: 0;
-        }
-    }
-    .box-img-men{
-        margin: 0;
-    }
-    .box-img-men img{
-        width: 100%;
-    }
-    .box-img-women{
-        margin: 0;
-    }
-    .box-img-women img{
-        width: 100%;
+    .button-comprar-2{
+        opacity: 1;
     }
 }
+/* END PERFUMES */

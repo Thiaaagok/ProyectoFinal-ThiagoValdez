@@ -1,5 +1,7 @@
+/* START HEADER */
 .header-info{
     margin: 0px 109px 0px 109px;
+    /* START CARROUSEL */
     .box-logo{
         padding: 5px 0px 5px 0px;
         background-color: black;
@@ -12,6 +14,8 @@
     .carousel-producto{
         margin-left: 150px;
     }
+    /* END CARROUSEL */
+    /* START INFO DERECHA */
     .info-producto{
         border-radius: 25px;
         margin: 0px 0px 0px 0px;
@@ -28,14 +32,8 @@
             margin-bottom: 50px;
         }
         .boton-comprar{
-            margin-left: 80px;
-            margin-bottom: 80px;
-            .comprar{
-                background-color: black;
-                border-radius: 25px;
-                padding: 15px 60px 15px 60px;
-                font-size: 20px;
-            }
+            margin-left: 160px;
+            margin-bottom: 40px;
         }
         .extra{
             display: flex;
@@ -55,8 +53,10 @@
             text-decoration: none;
         }
     }
+    /* END INFO DERECHA */
 }
-
+/* END HEADER */
+/* START MAIN */
 .main-margin{
     margin: 100px 109px 0px 109px;
     .flex-container-extra{
@@ -80,38 +80,4 @@
         }
     }
 }
-
-@media (max-width: 768px){
-    .header-info{
-        margin: 0 0 0 0;
-        .carousel-producto{
-            width: 100%;
-            margin: 0 0 0 0;
-            .img-perfume{
-                width: 100%;
-            }
-        }
-        .info-producto{
-            .boton-comprar{
-                margin-left: 0px;
-            }
-            .extra{
-                .box-extra{
-                    margin: 0 0 0 8px;
-                }
-            }
-        }
-    }
-    .flex-box-unique{
-        flex-wrap: wrap;
-    }
-    .main-margin{
-        margin: 0 0 0 0;
-        .flex-container-extra{
-            flex-wrap: wrap;
-            .descripcion{
-                margin: 0 0 20px 0;
-            } 
-        }
-    }
-}
+/* END MAIN */
