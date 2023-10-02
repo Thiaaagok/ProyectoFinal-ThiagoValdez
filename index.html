@@ -23,20 +23,23 @@
                         <a href="./index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./pages/hombres.html">Hombres</a>
+                        <a href="./pages/hombres.html" class="aindex">Hombres</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./pages/mujeres.html">Mujeres</a>
+                        <a href="./pages/mujeres.html" class="aindex">Mujeres</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./pages/historia.html">Historia</a>
+                        <a href="./pages/historia.html" class="aindex">Historia</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./pages/contacto.html">Contacto</a>
+                        <a href="./pages/contacto.html" class="aindex">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./pages/formulario.html">Formulario</a>
+                        <a href="./pages/formulario.html" class="aindex">Formulario</a>
                     </li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                    </svg>
                 </ul>
             </div>
         </div>
@@ -107,34 +110,30 @@
         <section class="lanzamientos">
             <h2 class="text-nuevos">Nuevos Productos</h2>
             <article class="grid-container-index">
-                <div class="box-perfume producto1">
-                    <a href="./pages/unique-perfume.html">
-                        <figure>
-                            <img src="./img/perfume-hombres/dior-savage.jpg" alt="perfume dior savage">
-                            <div class="info-index">
-                                <div class="rating">
-                                    <input value="5" name="rating" id="star5" type="radio">
-                                    <label for="star5"></label>
-                                    <input value="4" name="rating" id="star4" type="radio">
-                                    <label for="star4"></label>
-                                    <input value="3" name="rating" id="star3" type="radio">
-                                    <label for="star3"></label>
-                                    <input value="2" name="rating" id="star2" type="radio">
-                                    <label for="star2"></label>
-                                    <input value="1" name="rating" id="star1" type="radio">
-                                    <label for="star1"></label>
-                                </div>
-                                <figcaption>new fragance laurent</figcaption>
-                                <p>black opium illicit green edp</p>
+                <div class="new-product producto1">
+                    <figure class="product-info">
+                        <img src="./img/perfume-hombres/dior-savage.jpg" alt="perfume dior savage">
+                        <div class="info-index">
+                            <div class="rating">
+                                <input value="5" name="rating" id="star5" type="radio">
+                                <label for="star5"></label>
+                                <input value="4" name="rating" id="star4" type="radio">
+                                <label for="star4"></label>
+                                <input value="3" name="rating" id="star3" type="radio">
+                                <label for="star3"></label>
+                                <input value="2" name="rating" id="star2" type="radio">
+                                <label for="star2"></label>
+                                <input value="1" name="rating" id="star1" type="radio">
+                                <label for="star1"></label>
                             </div>
-                            <div class="precio-producto">
-                                <p class="signo-pesos">$65.900</p>
-                            </div>
+                            <figcaption>new fragance laurent</figcaption>
+                            <p class="marca">black opium illicit green edp</p>
+                            <p class="signo-pesos price">$65.900</p>
                             <button class="button-comprar-2 button-2">
-                                Comprar
+                                Añadir al carrito
                             </button>
-                        </figure>
-                    </a>
+                        </div>
+                    </figure>
                 </div>
                 <div class="box-perfume-index producto2">
                     <a href="./pages/unique-perfume.html">
@@ -213,12 +212,10 @@
                                 </div>
                                 <figcaption>new fragance laurent</figcaption>
                                 <p>black opium illicit green edp</p>
-                            </div>
-                            <div class="precio-producto">
                                 <p class="signo-pesos">$65.900</p>
                             </div>
                             <button class="button-comprar-2 button-2">
-                                Comprar
+                                Añadir al carrito
                             </button>
                         </figure>   
                     </a>
@@ -241,13 +238,11 @@
                                     <label for="star1"></label>
                                 </div>
                                 <figcaption>new fragance laurent</figcaption>
-                                <p>black opium illicit green edp</p>
+                                <p class="marca">black opium illicit green edp</p>
+                                <p class="signo-pesos ">$65.900</p>
                             </div>
-                            <div class="precio-producto">
-                                <p class="signo-pesos">$65.900</p>
-                            </div>
-                            <button class="button-comprar-2 button-2">
-                                Comprar
+                            <button class="button-comprar-2 button-2 btn-add-cart">
+                                Añadir al carrito
                             </button>
                         </figure>
                     </a>
@@ -402,5 +397,7 @@
 
     <!-- Link JS BOOTSTRAP 5-->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- Link JS -->
+    <script src="./js/carrito.js"></script>
 </body>
 </html>

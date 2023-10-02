@@ -567,7 +567,7 @@ footer {
   text-transform: uppercase;
   color: black;
   transition: all 1000ms;
-  font-size: 15px;
+  font-size: 12px;
   position: relative;
   overflow: hidden;
   outline: 1px solid black;
@@ -821,6 +821,46 @@ footer {
 }
 
 /* END FORM CONTACTANOS */
+.form-main h3 {
+  text-align: center;
+}
+
+.form-main form {
+  text-align: center;
+}
+
+.nuevo-perfume {
+  background-color: #595959;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.inv-perfume {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 25px;
+  background-color: #595959;
+}
+
+.inv-perfume ul {
+  list-style: none;
+}
+
+#contenedorLista {
+  background-color: #C5D5D9;
+  margin: 0px 463.203px 0px 463.203px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+}
+
+#listaPerfumes li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #nombreInput {
   border-radius: 100px;
   width: 200px;
@@ -844,6 +884,36 @@ footer {
 
 .boton-editar {
   margin-left: 30px;
+}
+
+/* CSS MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 60%;
+}
+
+.close {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
 }
 
 .main-error404 {
