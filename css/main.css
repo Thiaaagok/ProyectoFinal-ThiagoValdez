@@ -821,6 +821,31 @@ footer {
 }
 
 /* END FORM CONTACTANOS */
+#nombreInput {
+  border-radius: 100px;
+  width: 200px;
+  outline: 0;
+  text-align: center;
+}
+
+#marca {
+  border-radius: 100px;
+  width: 200px;
+  outline: 0;
+  text-align: center;
+}
+
+#precio {
+  border-radius: 100px;
+  width: 200px;
+  outline: 0;
+  text-align: center;
+}
+
+.boton-editar {
+  margin-left: 30px;
+}
+
 .main-error404 {
   margin: 50px 0px 0px 0px;
   align-items: center;
